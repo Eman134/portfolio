@@ -1,10 +1,6 @@
 {
     "home": "home",
     "about": "about-me",
-    "projects": "works",
-    "projects-subtitle": "My works",
-    "complete-projects": "complete-projects",
-    "small-projects": "small-projects",
     "resume": "resume",
     "contact": "contacts",
     "portfolio": "Portfolio",
@@ -24,5 +20,30 @@
     "resume-portuguese": "Portuguese",
     "about-subtitle": "Who am I?",
     "about-paragraph-1": "I am a front-end developer focused on building modern, accessible and responsive interfaces.",
-    "about-paragraph-2": "I turn ideas into clear and functional digital experiences, always seeking technical growth and code quality."
+    "about-paragraph-2": "I turn ideas into clear and functional digital experiences, always seeking technical growth and code quality.",
+    "projects": {
+        "title": "projects",
+        "subtitle": "My works",
+        "complete-projects": "complete-projects",
+        "small-projects": "small-projects",
+        "project-1-title": "Project 1",
+        "project-1-description": "Description of project 1.",
+        "project-2-title": "Project 2",
+        "project-2-description": "Description of project 2.",
+        "project-3-title": "Project 3",
+        "project-3-description": "Description of project 3.",
+        "project-4-title": "Project 4",
+        "project-4-description": "Description of project 4."
+    },
+    "smallprojects": {
+        "project-1-title": "Whatsapp bot",
+        "project-1-description": "Bot to automate messages on Whatsapp using the Baileys library.",
+        "project-2-title": "Password generator",
+        "project-2-description": "Random password generator with customization options.",
+        "project-3-title": "Currency converter",
+        "project-3-description": "Application to convert values between different currencies using an exchange API.",
+        "project-4-title": "Todo list",
+        "project-4-description": "Application to manage daily tasks with features to add, edit and delete."
+    }
+
 }
