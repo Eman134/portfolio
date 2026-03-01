@@ -8,6 +8,9 @@
     width: 100%;
     z-index: 100;
     margin: 0;
+    padding: 1rem;
+    background-color: #282C33;
+    opacity: 0.9;
 }
 
 .titulo {
@@ -43,18 +46,59 @@
 
 .selecao-idioma {
     background-color: transparent;
-    color: #fff;
-    border: none;
-    font-size: 0.8rem;
+    border: 1px solid #ABB2BF;
+    color: #ABB2BF;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .selecao-idioma:hover {
-    background-color: #1a1a1a;
-    color: purple;
+    background-color: #ABB2BF;
+    color: #1f232a;
+}
+
+.selecao-idioma.active {
+    background-color: #870EBF;
+    color: #fff;
+    border-color: #870EBF;
 }
 
 .selecao-idioma option {
-    background-color: #1a1a1a;
+    background-color: #1f232a;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cabeca {
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 1rem;
+    }
+
+    .titulo {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .selecao-idioma {
+        font-size: 0.85rem;
+        padding: 3px 8px;
+    }
 }

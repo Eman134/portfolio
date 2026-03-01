@@ -7,7 +7,7 @@ const Header = () => {
   const { t, idioma, changeLanguage } = useLanguage()
 
   return (
-    <header className="cabeca" style={ { padding: '1rem', backgroundColor: '#282C33', opacity: 0.9 } }>
+    <header className="cabeca">
       <h4 className="titulo">XXXX</h4>    
 
       <nav>
