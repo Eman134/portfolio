@@ -2,6 +2,7 @@
     "home": "home",
     "about": "about-me",
     "skills": "skills",
+    "projects": "works",
     "resume": "resume",
     "contact": "contacts",
     "portfolio": "Portfolio",
@@ -54,4 +55,6 @@
     "position-name-1": "Backend Developer",
     "position-name-2": " Senior Backend Developer",
     "job-description-1": "I worked on the development and maintenance of back-end applications, implementing APIs, business logic, and database integrations. I also handled version control with Git, bug fixes, and performance optimization, collaborating within an agile team and following software development best practices.",
+    "job-description-2":"I worked as a Mid-Level Software Developer, designing and evolving scalable solutions, defining architectures, and conducting code reviews to ensure quality and best practices. I collaborated with cross-functional teams on delivery planning and contributed to CI/CD implementation, production monitoring, and continuous application optimization.",
+    "job-description-3": "I worked as a Senior Software Developer, leading architectural decisions and driving the evolution of high-scale, mission-critical systems. I was responsible for defining technical standards, mentoring team members, conducting strategic code reviews, and ensuring long-term code quality and sustainability.\n\nI also contributed to service decomposition, performance and reliability optimization, and actively participated in technical planning, technical debt prioritization, and roadmap definition alongside product and business teams."
 }
