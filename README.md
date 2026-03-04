@@ -41,30 +41,27 @@ Construir um site pessoal com navegacao clara e conteudo organizado, incluindo a
 
 ```
 /
-   docs/
-      prototipos/
-   frontend/
-      public/
-      src/
-         assets/
-         components/
-         locales/
-         pages/
-         services/
-         styles/
-         App.jsx
-         main.jsx
-      package.json
-      vite.config.js
-   README.md
+├── docs/
+│   └── prototipos/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── locales/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+└── README.md
 ```
-
-> Estrutura atualizada conforme o repositório.
 
 ## 🔧 Instalação e Execução
 
 ### Pré-requisitos
-Certifique-se de que o usuário tenha o ambiente configurado.
 
 - Node.js LTS (Necessário para o Front-end React)
 - Gerenciador de pacotes: npm (ou yarn/pnpm)
@@ -72,34 +69,31 @@ Certifique-se de que o usuário tenha o ambiente configurado.
 ### Passos
 
 1. Acesse a pasta do front-end:
-   - cd frontend
+   - `cd frontend`
 2. Instale as dependências:
-   - npm install
+   - `npm install`
 3. Execute em modo de desenvolvimento:
-   - npm run dev
+   - `npm run dev`
 4. Gere o build de produção:
-   - npm run build
+   - `npm run build`
 5. Visualize o build localmente (opcional):
-   - npm run preview
+   - `npm run preview`
 
-> Comandos atualizados conforme os scripts reais do projeto.
+## ✉️ Configuração do formulário de contato (EmailJS)
 
-## Configuração do formulário de contato
+No arquivo `frontend/src/services/email.js`, substitua os valores abaixo pelos dados da sua conta EmailJS:
 
-- documentar o servico de envio de e-mail e as variaveis de ambiente necessarias.
+- `YOUR_SERVICE_ID`
+- `YOUR_TEMPLATE_ID`
+- `YOUR_PUBLIC_KEY`
 
-## ⚡Como Executar a Aplicação
+O template do EmailJS deve conter os campos: `name`, `email` e `message`, para coincidir com o formulário.
 
-Execute a aplicação em modo de desenvolvimento em dois terminais separados.
+## 🚀 Deploy
 
-Passo a passo de execução aqui.
+O projeto está pronto para deploy como aplicação estática após o comando `npm run build`.
 
-## Deploy
-
-- Provedor: a definir
-- URL publica: a definir
-
-## Figma
+## 🎨 Figma
 
 - https://www.figma.com/design/2n2ZNTDzwCOiKLBwfiv7Ir/Portfolio?node-id=0-1&t=ZzlhBkS4CiMu8oKJ-1
 
@@ -117,7 +111,6 @@ Passo a passo de execução aqui.
 ### Resume
 ![Tela Resume](docs/prototipos/Resume.jpg)
 
-  
 ## 👥 Autores
 
 - Ana Luiza de Freitas Rodrigues

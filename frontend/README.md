@@ -1,18 +1,45 @@
-# React + Vite
+# Frontend - Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação front-end do portfólio profissional, desenvolvida com React e Vite.
 
-Currently, two official plugins are available:
+## Scripts disponíveis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `npm run dev` - inicia o servidor de desenvolvimento.
+- `npm run build` - gera o build de produção.
+- `npm run preview` - executa preview local do build.
+- `npm run lint` - executa verificação de lint.
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- Vite
+- React Router
+- i18next / react-i18next
+- React Icons
+- EmailJS
 
-Note: This will impact Vite dev & build performances.
+## Estrutura principal
 
-## Expanding the ESLint configuration
+```
+frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── locales/
+│   ├── pages/
+│   ├── services/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── vite.config.js
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Configuração do formulário de contato
+
+Atualize o arquivo `src/services/email.js` com suas credenciais do EmailJS:
+
+- `YOUR_SERVICE_ID`
+- `YOUR_TEMPLATE_ID`
+- `YOUR_PUBLIC_KEY`
