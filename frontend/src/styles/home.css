@@ -4,7 +4,14 @@
         justify-content: space-between;
         gap: 2rem;
         padding: 2rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+}
+.home-intro{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 .home-infos {
     flex: 1;

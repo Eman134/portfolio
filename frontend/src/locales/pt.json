@@ -1,7 +1,6 @@
 {
     "home": "início",
     "about": "sobre mim",
-    "projects": "projetos",
     "skills": "skills",
     "resume": "currículo",
     "contact": "contatos",
@@ -10,6 +9,7 @@
     "nome": "Nome",
     "profissao": "ENGENHEIRO DE SOFTWARE",
     "veja-projetos": "veja meus projetos >",
+    "ver-todos": "ver todos >",
     "entre-em-contato": "entre em contato >",
     "trabalhando-atualmente": "Trabalhando atualmente em",
     "contato-resumo": "Estou interessado em oportunidades de freelance. No entanto,\n se você tiver outra solicitação ou pergunta, não \n hesite em entrar em contato comigo",
@@ -36,7 +36,8 @@
         "project-3-title": "Projeto 3",
         "project-3-description": "Descrição do projeto 3.",
         "project-4-title": "Projeto 4",
-        "project-4-description": "Descrição do projeto 4."
+        "project-4-description": "Descrição do projeto 4.",
+        "best-projects": "melhores projetos"
     },
     "smallprojects": {
         "project-1-title": "Bot whatsapp",

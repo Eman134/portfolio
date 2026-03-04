@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-.about-content,
-.skills-content{
+.about-content{
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -32,11 +31,6 @@
     margin-right: 0.35rem;
 }
 
-.skills-tag {
-    color: #870EBF;
-    margin-right: 0.35rem;
-}
-
 .experience-tag {
     color: #870EBF;
     margin-right: 0.35rem;
@@ -57,16 +51,6 @@
 
 .about-bio p {
     margin: 0;
-}
-
-.skills-content{
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    text-align: left;
-    max-width: 980px;
-    margin: 100px auto 0;
-
 }
 
 .experience-content{
@@ -162,29 +146,4 @@
     -webkit-background-clip: text;
     background-clip: text;
     animation: gradient-shift 10s ease-in-out infinite;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
-}
-
-.skill-card {
-    border-style: solid;
-    border-color: #ABB2BF;
-    border-width: 1px;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    max-height: 500px;
-    position: relative;
-    overflow: hidden;
-}
-
-.skills-description {
-    margin: 0;
-    color: #ABB2BF;
-    text-align: center;
-    padding: 0 1rem;
 }
