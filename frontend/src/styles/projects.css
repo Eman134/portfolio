@@ -40,7 +40,6 @@
     font-size: 0.95rem;
 }
 
-/* GRID SYSTEM */
 .best-projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,9 +54,8 @@
     margin-bottom: 1.5rem;
 }
 
-/* PREMIUM CARD STYLE - SHARED ACCROSS HOME AND PROJECTS PAGE */
 .project-card-premium {
-    background: #12121a; /* Match skills background */
+    background: #12121a;
     border: 1px solid #1e1e2e;
     border-left: 2.5px solid transparent;
     overflow: hidden;
@@ -69,7 +67,7 @@
 
 .project-card-premium:hover {
     border-color: #3a3a5e;
-    border-left-color: #870EBF; /* primary accent */
+    border-left-color: #870EBF;
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(135, 14, 191, 0.15);
 }
@@ -184,7 +182,6 @@
     transform: translateY(-2px);
 }
 
-/* RESPONSIVENESS */
 @media (max-width: 1000px) {
     .best-projects-grid {
         grid-template-columns: repeat(2, 1fr);

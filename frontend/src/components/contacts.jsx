@@ -1,35 +1,31 @@
 import { useLanguage } from '../services/translation'
-import { Trans } from "react-i18next"
 import "../styles/contacts.css"
-
-// icones da bibiloteca react-icons
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
-import EmailForm from './EmailForm'  
+import EmailForm from './EmailForm'
 
 const Contacts = () => {
     const { t } = useLanguage()
 
-    // lista de contatos, cada um com href, label e ícone, editar as urls com suas informações
     const items = [
-        { href: 'https://linkedin.com', label: 'Linkedin', icon: <FaLinkedin /> },
-        { href: 'https://github.com/joaopauloaramuni', label: 'Github', icon: <FaGithub /> },
-        { href: 'mailto:jfwwniogwi@gmail.com', label: 'Email', icon: <FaEnvelope /> },
-        { href: 'https://wa.me/5531999999999', label: 'Whatsapp', icon: <FaWhatsapp /> },
+        { href: 'https://linkedin.com/in/kaykeeman', label: 'Linkedin', icon: <FaLinkedin /> },
+        { href: 'https://github.com/Eman134', label: 'Github', icon: <FaGithub /> },
+        { href: 'mailto:kaykeeman@gmail.com', label: 'Email', icon: <FaEnvelope /> },
+        { href: 'https://wa.me/5531971661762', label: 'Whatsapp', icon: <FaWhatsapp /> },
     ];
 
     return (
-        <div id="contact" className="contact-content">
-            <h2>
-                <span className="hashtag">#</span>{t("contact")}
+        <section id="contact" className="contact-content">
+            <h2 className="contact-title">
+                <span className="contact-hashtag">#</span>{t("contact")}
             </h2>
-            <p>{t("contato-resumo")}</p>
-            
-            <div className="contact-links">
+            <p className="contact-desc">{t("contato-resumo")}</p>
+
+            <div className="contact-links-group">
                 {items.map(item => (
                     <a
                         key={item.href}
                         href={item.href}
-                        className="contact-link"
+                        className="contact-btn-social"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -40,8 +36,7 @@ const Contacts = () => {
             </div>
 
             <EmailForm />
-
-        </div>
+        </section>
     )
 }
 

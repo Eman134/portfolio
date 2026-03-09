@@ -1,126 +1,172 @@
 .contact-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    max-width: 720px;
+    margin: 80px auto;
+    padding: 0 2rem;
 }
 
-.envio-email {
-  width: 100%;
-  max-width: 600px;
-  border: 2px solid #870ebf;
-  padding: 1.1rem 1.5rem;
-  border-radius: 8px;
-  margin-top: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+.contact-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.envio-email h2 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #870ebf;
-  text-align: center;
+.contact-hashtag {
+    color: #870EBF;
 }
 
-.envio-email > p {
-  margin: 0;
-  font-size: 0.85rem;
-  text-align: center;
-  color: #ccc;
+.contact-desc {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ABB2BF;
+    margin-bottom: 2.5rem;
+    max-width: 560px;
 }
 
-.envio-email label {
-  color: #ddd;
-  font-size: 0.8rem;
+.contact-links-group {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
-.envio-email input,
-.envio-email textarea {
-  width: 100%;
-  background: #21232a;
-  border: 1px solid #870ebf;
-  border-radius: 6px;
-  padding: 0.55rem 0.7rem;
-  color: #fff;
-  font-size: 0.9rem;
+.contact-btn-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    color: #ABB2BF;
+    text-decoration: none;
+    border: 1px solid #1e1e2e;
+    padding: 0.6rem 1.2rem;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    letter-spacing: 0.5px;
 }
 
-.envio-email textarea {
-  resize: vertical;
-  min-height: 80px;
+.contact-btn-social:hover {
+    color: #870EBF;
+    border-color: rgba(135, 14, 191, 0.4);
+    background: rgba(135, 14, 191, 0.05);
+    box-shadow: 0 0 12px rgba(135, 14, 191, 0.1);
 }
 
-.envio-email button {
-  width: 100%;
-  padding: 0.55rem;
-  background: #870ebf;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: background 0.2s;
+.contact-btn-social .icon {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    border-radius: 0;
+    width: auto;
+    height: auto;
 }
 
-.envio-email button:hover,
-.envio-email button:focus {
-  background: #a05fe0;
+/* FORM BOX */
+.contact-form-premium {
+    background: #12121a;
+    border: 1px solid #1e1e2e;
+    border-radius: 4px;
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading-premium {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #870EBF;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.form-sub-premium {
+    font-size: 0.8rem;
+    color: #ABB2BF;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.form-field-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-field-label {
+    display: block;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ABB2BF;
+    margin-bottom: 0.5rem;
+}
+
+.form-field-input, .form-field-textarea {
+    width: 100%;
+    background: #0e0e14;
+    border: 1px solid #1e1e2e;
+    color: #FFFFFF;
+    padding: 0.75rem 1rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.form-field-input:focus, .form-field-textarea:focus {
+    border-color: #870EBF;
+    box-shadow: 0 0 0 3px rgba(135, 14, 191, 0.1);
+}
+
+.form-field-textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.btn-form-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: transparent;
+    border: 1px solid #1e1e2e;
+    color: #ABB2BF;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-form-submit:hover {
+    border-color: rgba(135, 14, 191, 0.4);
+    color: #FFFFFF;
+    background: #870EBF;
+    box-shadow: 0 0 20px rgba(135, 14, 191, 0.25);
+    transform: translateY(-2px);
 }
 
 .successo-mensagem {
-  color: #70f570 !important;
-  text-align: center;
-  margin-top: 0.5rem;
-  font-weight: 500;
+    color: #4ade80 !important;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
 }
 
 .error-mensagem {
-  color: #f56e6e !important;
-  text-align: center;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
-
-.contact-content p {
-  white-space: pre-line;
-  max-width: 600px;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  padding: 0.5rem 1rem;
-  max-width: fit-content;
-  align-self: center;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #870ebf;
-  border-radius: 6px;
-  background: #2b2b2b;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
-}
-
-.contact-link .icon {
-  display: flex;
-  align-items: center;
-  font-size: 1.2em;
-  background-color: transparent;
-}
-
-.contact-link:hover {
-    background: #870EBF;
-    transform: scale(1.05);
+    color: #f87171 !important;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
 }

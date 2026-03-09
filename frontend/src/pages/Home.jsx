@@ -1,15 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../services/translation'
 import "../styles/home.css"
-//Componente de contatos
 import Contacts from '../components/contacts.jsx'
-//Componente melhores projetos
 import BestProjects from '../components/BestProjects.jsx'
-//Componente habilidades
 import Skills from '../components/Skills.jsx'
-//Icone localidade
 import { MdLocationOn } from "react-icons/md";
-// Foto
 import kayke from "../assets/kayke.jpeg"
 
 const Home = () => {

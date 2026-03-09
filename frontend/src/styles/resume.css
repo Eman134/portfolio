@@ -20,25 +20,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .resume-lang-btn {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid #1e1e2e;
     background: transparent;
-    border: none;
-    border-right: 1px solid rgba(255, 255, 255, 0.35);
-    color: #ffffff;
-    padding: 0.45rem 0.9rem;
-    font-family: inherit;
+    color: #ABB2BF;
     cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
 }
 
-.resume-lang-btn:last-child {
-    border-right: none;
+.resume-lang-btn:hover {
+    border-color: rgba(135, 14, 191, 0.4);
+    color: #FFFFFF;
+    background: rgba(135, 14, 191, 0.15);
+    box-shadow: 0 0 15px rgba(135, 14, 191, 0.1);
 }
 
 .resume-lang-btn.active {
-    color: #870EBF;
+    color: #FFFFFF;
+    border-color: #870EBF;
+    background: rgba(135, 14, 191, 0.1);
 }
 
 .resume-preview {

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//Para scrollar a página para cima ao navegar em um link
 import { useScrollToTop } from './services/scrollToTop';
 import Layout from './components/Layout';
 import Home from './pages/Home';

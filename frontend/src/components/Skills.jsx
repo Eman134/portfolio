@@ -7,36 +7,42 @@ const Skills = () => {
      const skillsData = [
         {
             titleKey: 'skills.skill-1-title',
-            techs: "TyppeScript Python JavaScript Cobol"
+            techs: "TypeScript Python JavaScript Cobol"
         },
         {
             titleKey: 'skills.skill-2-title',
-            techs: "VSCode Figma Linux Git Font Awesome"
+            techs: "VSCode Figma Linux Git Font-Awesome"
         },
         {
             titleKey: 'skills.skill-3-title',
-            techs: " React Vue Dinsnake Discord.js"
+            techs: "React Vue Dinsnake Discord.js"
         },
         {
             titleKey: 'skills.skill-4-title',
-            techs: "SQLite PostGreSQL Mongo"
+            techs: "SQLite PostgreSQL Mongo"
         }
     ];
 
     return (
-        <section className="skills-content">
-            <h1 className="skills-title">
-                <span className="skills-tag">#</span>
+        <section className="skills-content-premium">
+            <h2 className="skills-section-title">
+                <span className="skills-hash">#</span>
                 {t("skills")}
-            </h1>
+            </h2>
 
-            <div className="skills-grid">
+            <div className="skills-grid-premium">
                 {skillsData.map((skill, index) => (
-                    <div className="skill-card" key={index}>
-                        <h3 className="skills-description">
-                            {t(skill.titleKey)}
-                        </h3>
-                        <p className="skills-details">{t(skill.techs)}</p>
+                    <div className="skill-box-premium" key={index}>
+                        <div className="skill-box-header">
+                            <span className="skill-slashes">//</span> {t(skill.titleKey)}
+                        </div>
+                        <div className="skill-tags-group">
+                            {skill.techs.split(' ').map((tech, i) => (
+                                <span className="skill-tag-premium" key={i}>
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>
