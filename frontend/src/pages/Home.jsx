@@ -37,6 +37,8 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home-foto">
+                    <div className="photo-decoration deco-1"></div>
+                    <div className="photo-decoration deco-2"></div>
                     <img src={foto} alt="Foto de perfil" className="photo-box" />
                     <div className="trabalhando-box">
                         <span className="trabalhando-quadrado"></span>

@@ -1,15 +1,17 @@
 import Header from './header';
 import Footer from './Footer';
+import CircuitBackground from './CircuitBackground';
 
 const Layout = ({ children }) => {
     return (
         <div style={{
-            backgroundColor: '#282C33',
             color: '#ABB2BF',
             minHeight: '100vh',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            position: 'relative'
         }}>
+            <CircuitBackground />
             <Header />
             <main style={{ padding: '2rem', flex: 1 }}>
                 {children}
