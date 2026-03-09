@@ -6,11 +6,9 @@ import '../styles/contacts.css'
 const EmailForm = () => {
   const { t } = useLanguage()
   const formRef = useRef()
-  // estados para controlar mensagens de sucesso/erro
   const [enviado, setEnviado] = useState(false)
   const [error, setError] = useState(null)
 
-  // limpa mensagens de sucesso/erro após 5 segundos
   useEffect(() => {
     if (enviado || error) {
       const timer = setTimeout(() => {
@@ -36,24 +34,32 @@ const EmailForm = () => {
   }
 
   return (
-    <form ref={formRef} className="envio-email" onSubmit={handleSubmit}>
-      <h2 style={{ textTransform: 'capitalize' }}>{t('entre-em-contato') }</h2>
-      <p>{t('contato-descricao')}</p>
+    <div className="contact-form-premium">
+      <div className="form-heading-premium">&gt; {t('entre-em-contato') }</div>
+      <p className="form-sub-premium">{t('contato-descricao')}</p>
 
-      <label htmlFor="nome">{t('nome')}</label>
-      <input type="text" id="nome" name="name" required />
+      <form ref={formRef} onSubmit={handleSubmit}>
+        <div className="form-field-group">
+            <label className="form-field-label" htmlFor="nome">{t('nome')}</label>
+            <input className="form-field-input" type="text" id="nome" name="name" placeholder="Ex: Kayke Emanoel" required />
+        </div>
 
-      <label htmlFor="email">{t('email')}</label>
-      <input type="email" id="email" name="email" required />
+        <div className="form-field-group">
+            <label className="form-field-label" htmlFor="email">{t('email')}</label>
+            <input className="form-field-input" type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
 
-      <label htmlFor="mensagem">{t('mensagem')}</label>
-      <textarea id="mensagem" name="message" required></textarea>
+        <div className="form-field-group">
+            <label className="form-field-label" htmlFor="mensagem">{t('mensagem')}</label>
+            <textarea className="form-field-textarea" id="mensagem" name="message" placeholder="Sua mensagem..." required></textarea>
+        </div>
 
-      <button type="submit">{t('enviar')}</button>
+        <button className="btn-form-submit" type="submit">{t('enviar')}</button>
 
-      {enviado && <p className="successo-mensagem">{t('mensagem-enviada')}</p>}
-      {error && <p className="error-mensagem">{error}</p>}
-    </form>
+        {enviado && <p className="successo-mensagem">{t('mensagem-enviada')}</p>}
+        {error && <p className="error-mensagem">{error}</p>}
+      </form>
+    </div>
   )
 }
 

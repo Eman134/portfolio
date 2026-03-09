@@ -88,20 +88,22 @@ const Projects = () => {
                 {t('projects.complete-projects')}
             </h2>
 
-            <div className="projects-grid">
+            <div className="best-projects-grid">
                 {projectsData.map((project, index) => (
-                    <div className="best-project-card" key={index}>
-                        <img src={project.image} alt={t(project.titleKey)} className="best-project-image" />
-                        <div className="project-techs">
-                            {project.techs.map((tech, i) => (
-                                <span className="project-tech" key={i}>{tech}</span>
-                            ))}
+                    <div className="project-card-premium" key={index}>
+                        <div className="project-image-container">
+                            <img src={project.image} alt={t(project.titleKey)} className="project-img-display" />
                         </div>
-                        <h3 className="project-title">{t(project.titleKey)}</h3>
-                        <p className="project-description">{t(project.descKey)}</p>
-                        <div className="project-links">
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">&gt; GitHub</a>
-                            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">&gt; Demo</a>
+                        <div className="project-body-premium">
+                            <div className="project-tech-stack">
+                                {project.techs.join(' · ')}
+                            </div>
+                            <h3 className="project-title-premium">{t(project.titleKey)}</h3>
+                            <p className="project-desc-premium">{t(project.descKey)}</p>
+                            <div className="project-btns-premium">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-card-sm">&gt; GitHub</a>
+                                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-card-sm">&gt; Demo</a>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -112,19 +114,19 @@ const Projects = () => {
                 {t('projects.small-projects')}
             </h2>
 
-            <div className="projects-grid">
+            <div className="best-projects-grid">
                 {smallProjectsData.map((project, index) => (
-                    <div className="best-project-card" key={index}>
-                        <div className="project-techs">
-                            {project.techs.map((tech, i) => (
-                                <span className="project-tech" key={i}>{tech}</span>
-                            ))}
-                        </div>
-                        <h3 className="project-title">{t(project.titleKey)}</h3>
-                        <p className="project-description">{t(project.descKey)}</p>
-                        <div className="project-links">
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">&gt; GitHub</a>
-                            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">&gt; Demo</a>
+                    <div className="project-card-premium" key={index}>
+                        <div className="project-body-premium">
+                            <div className="project-tech-stack">
+                                {project.techs.join(' · ')}
+                            </div>
+                            <h3 className="project-title-premium">{t(project.titleKey)}</h3>
+                            <p className="project-desc-premium">{t(project.descKey)}</p>
+                            <div className="project-btns-premium">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-card-sm">&gt; GitHub</a>
+                                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-card-sm">&gt; Demo</a>
+                            </div>
                         </div>
                     </div>
                 ))}

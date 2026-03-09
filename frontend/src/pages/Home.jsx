@@ -10,7 +10,7 @@ import Skills from '../components/Skills.jsx'
 //Icone localidade
 import { MdLocationOn } from "react-icons/md";
 // Foto
-import foto from "../assets/foto.png"
+import kayke from "../assets/kayke.jpeg"
 
 const Home = () => {
     const { t } = useLanguage()
@@ -37,9 +37,10 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home-foto">
-                    <div className="photo-decoration deco-1"></div>
-                    <div className="photo-decoration deco-2"></div>
-                    <img src={foto} alt="Foto de perfil" className="photo-box" />
+                    <div className="photo-wrapper-premium">
+                        <div className="photo-decoration-rect"></div>
+                        <img src={kayke} alt="Kayke Emanoel" className="photo-box" />
+                    </div>
                     <div className="trabalhando-box">
                         <span className="trabalhando-quadrado"></span>
                         <p>
