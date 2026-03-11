@@ -95,8 +95,12 @@ const Projects = () => {
                             <img src={project.image} alt={t(project.titleKey)} className="project-img-display" />
                         </div>
                         <div className="project-body-premium">
-                            <div className="project-tech-stack">
-                                {project.techs.join(' · ')}
+                            <div className="project-tags-group">
+                                {project.techs.map((tech, i) => (
+                                    <span className="project-tag-pill" key={i}>
+                                        {tech}
+                                    </span>
+                                ))}
                             </div>
                             <h3 className="project-title-premium">{t(project.titleKey)}</h3>
                             <p className="project-desc-premium">{t(project.descKey)}</p>
@@ -118,8 +122,12 @@ const Projects = () => {
                 {smallProjectsData.map((project, index) => (
                     <div className="project-card-premium" key={index}>
                         <div className="project-body-premium">
-                            <div className="project-tech-stack">
-                                {project.techs.join(' · ')}
+                            <div className="project-tags-group">
+                                {project.techs.map((tech, i) => (
+                                    <span className="project-tag-pill" key={i}>
+                                        {tech}
+                                    </span>
+                                ))}
                             </div>
                             <h3 className="project-title-premium">{t(project.titleKey)}</h3>
                             <p className="project-desc-premium">{t(project.descKey)}</p>

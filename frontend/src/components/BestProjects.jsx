@@ -57,8 +57,12 @@ const BestProjects = () => {
                         </div>
 
                         <div className="project-body-premium">
-                            <div className="project-tech-stack">
-                                {project.techs.join(' · ')}
+                            <div className="project-tags-group">
+                                {project.techs.map((tech, i) => (
+                                    <span className="project-tag-pill" key={i}>
+                                        {tech}
+                                    </span>
+                                ))}
                             </div>
 
                             <h3 className="project-title-premium">

@@ -100,17 +100,29 @@
     flex-grow: 1;
 }
 
-.project-tech-stack {
+.project-tags-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.project-tag-pill {
     font-family: 'Fira Code', monospace;
     font-size: 0.75rem;
+    color: #ABB2BF;
+    border: 1px solid #2a2a3e;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+.project-tag-pill:hover {
+    border-color: rgba(135, 14, 191, 0.4);
     color: #870EBF;
-    letter-spacing: 1px;
-    margin-bottom: 0.75rem;
-    background: rgba(135, 14, 191, 0.08);
-    display: inline-block;
-    padding: 0.25rem 0.6rem;
-    border-radius: 3px;
-    width: fit-content;
+    background: rgba(135, 14, 191, 0.05);
+    transform: translateY(-1px);
 }
 
 .project-title-premium {
