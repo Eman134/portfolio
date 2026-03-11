@@ -10,7 +10,7 @@ const Resume = () => {
         setResumeLang(idioma === "PT" ? "PT" : "EN");
     }, [idioma]);
 
-    const resumeFile = resumeLang === "PT" ? "/curriculo-pt.pdf" : "/resume-en.pdf";
+    const resumeFile = resumeLang === "PT" ? "/Curriculo_Kayke-Pt.pdf" : "/Curriculo_Kayke-Pt.pdf";
 
     return (
         <div className="resume-content">

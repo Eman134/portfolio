@@ -25,6 +25,18 @@ const Home = () => {
                             <a href="#contact" className="cta-item">&gt; {t("entre-em-contato")}</a>
                         </div>
 
+                        <div className="contact-links-group" style={{ marginBottom: '1rem', marginTop: '1.5rem', gap: '0.8rem' }}>
+                            <a href="https://linkedin.com/in/kaykeeman" className="contact-btn-social" target="_blank" rel="noopener noreferrer">
+                                <i className='bx bxl-linkedin icon'></i>
+                            </a>
+                            <a href="https://github.com/Eman134" className="contact-btn-social" target="_blank" rel="noopener noreferrer">
+                                <i className='bx bxl-github icon'></i>
+                            </a>
+                            <a href="mailto:kaykeeman@gmail.com" className="contact-btn-social" target="_blank" rel="noopener noreferrer">
+                                <i className='bx bx-envelope icon'></i>
+                            </a>
+                        </div>
+
                         <div className="location">
                             <MdLocationOn className="icon" />
                             <p>Belo Horizonte, MG - Brasil</p>
