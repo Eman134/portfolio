@@ -84,7 +84,7 @@ const Projects = () => {
             <p className="projects-subtitle">{t('projects.subtitle')}</p>
 
             <h2 className="sub-projects-title">
-                <span className="projects-tag">#</span>
+                <span className="projects-tag">#</span>{" "}
                 {t('projects.complete-projects')}
             </h2>
 
@@ -114,7 +114,7 @@ const Projects = () => {
             </div>
 
             <h2 className="sub-projects-title">
-                <span className="projects-tag">#</span>
+                <span className="projects-tag">#</span>{" "}
                 {t('projects.small-projects')}
             </h2>
 

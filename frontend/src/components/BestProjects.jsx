@@ -39,7 +39,7 @@ const BestProjects = () => {
         <section className="best-projects-content">
             <div className="best-projects-header">
                 <h2 className="best-projects-title">
-                    <span className="projects-tag">#</span>
+                    <span className="projects-tag">#</span>{" "}
                     {t("projects.best-projects")}
                 </h2>
                 <Link to="projects" className="all-projects">{t("ver-todos")} &gt;</Link>

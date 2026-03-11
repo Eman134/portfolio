@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
-const serviceID = 'YOUR_SERVICE_ID';
-const templateID = 'YOUR_TEMPLATE_ID';
-const publicKey = 'YOUR_PUBLIC_KEY';
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export function sendEmail(formRef) {
   if (!formRef?.current) {

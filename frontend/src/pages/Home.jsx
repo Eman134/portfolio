@@ -21,8 +21,8 @@ const Home = () => {
 
                     <div className="home-bottom">
                         <div className="cta-box">
-                            <Link to="projects" className="cta-item">{t("veja-projetos")}</Link>
-                            <a href="#contact" className="cta-item">{t("entre-em-contato")}</a>
+                            <Link to="projects" className="cta-item">&gt; {t("veja-projetos")}</Link>
+                            <a href="#contact" className="cta-item">&gt; {t("entre-em-contato")}</a>
                         </div>
 
                         <div className="location">
