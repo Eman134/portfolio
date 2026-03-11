@@ -56,8 +56,16 @@
     gap: 0.5rem;
 }
 
-.skill-slashes {
-    opacity: 0.6;
+.skill-icon-premium {
+    font-size: 1.3rem;
+    color: #870EBF;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-box-premium:hover .skill-icon-premium {
+    transform: scale(1.15);
 }
 
 .skill-tags-group {
