@@ -43,6 +43,7 @@ import rcAPISaas1 from '../assets/realconsult/APISaas1.png';
 import rcAPISaas2 from '../assets/realconsult/APISaas2.png';
 import rcLembreteNF from '../assets/realconsult/LembreteNF.png';
 import rcPerfil from '../assets/realconsult/PerfilUsuario.png';
+import rcApresentacao from '../assets/realconsult/realconsultapresentacao.jpg';
 
 const BestProjects = () => {
     const { t } = useLanguage();
@@ -80,12 +81,13 @@ const BestProjects = () => {
         {
             id: 3,
             image: rcMain,
-            gallery: [rcDashboard, rcLogin, rcAuditoria, rcEconomias, rcGestaoClientes, rcGestaoUsuarios, rcReceitas, rcReceitasFat, rcDespesas, rcAPISaas1, rcAPISaas2, rcLembreteNF, rcPerfil],
+            gallery: [rcApresentacao,rcDashboard, rcLogin, rcAuditoria, rcEconomias, rcGestaoClientes, rcGestaoUsuarios, rcReceitas, rcReceitasFat, rcDespesas, rcAPISaas1, rcAPISaas2, rcLembreteNF, rcPerfil],
             techs: ['Next.js 15', 'Spring Boot', 'MySQL', 'Tailwind'],
             titleKey: 'projects.project-3-title',
             descKey: 'projects.project-3-description',
             detailsKey: 'projects.project-3-details',
             awardKey: 'projects.project-3-award',
+            linkedin: 'https://www.linkedin.com/posts/kaykeeman_wemakesoftware-pucminas-inovaaexaeto-activity-7441977418527150081-A5sf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQutiQBT9SMzyxs5977xrztp20kEx8elnQ',
             github: null,
             githubPrivate: true
         }
